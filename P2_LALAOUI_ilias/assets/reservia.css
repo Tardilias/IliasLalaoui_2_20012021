@@ -1,67 +1,66 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700&display=swap');
-
 /* General */
 
-body{
+body {
     margin: 0;
-    box-sizing: border-box; 
+    box-sizing: border-box;
     font-family: 'Raleway', sans-serif;
 }
 
-#main{
-    margin: 0 50px 50px;
+#main {
+    margin: 0 25px 25px;
 }
 
-ul{
+ul {
     list-style-type: none;
     padding: 0;
     margin: 0;
 }
 
-a{
+a {
     text-decoration: none;
     color: inherit;
 }
 
-h2{
-    font-weight: 700;
+h2 {
+    font-weight: 600;
 }
 
-.flex, .top{
+.flex, .top {
     display: flex;
 }
 
-.euros{
+.euros {
     font-weight: 600;
 }
 
 /* Header */
 
-header{
+header {
     justify-content: space-between;
     margin-bottom: 35px;
 }
 
-.logo{
+.logo {
     margin-top: 30px;
     flex: 1;
 }
 
-nav li{
+nav li {
     padding-top: 40px;
 }
 
-nav a{
+nav a {
     padding: 40px 30px 0;
 }
 
-.signUp{
+.signUp {
     color: #0065FC;
     font-weight: 700;
     padding: 40px 40px 0;
 }
 
-nav li a:hover{
+nav li a:hover {
     color: #0065FC;
     border-top: 2px solid #0065FC;
     padding-top: 38px;
@@ -69,36 +68,36 @@ nav li a:hover{
 
 /* Search bar */
 
-.search{
+.search {
     margin-bottom: 30px;
 }
 
-.search h2{
+.search h2 {
     margin-bottom: 10px;
 }
 
-.search p{
+.search p {
     margin-top: 10px;
 }
 
-.searchBar{
+.searchBar {
     margin-bottom: 30px;
     height: 50px;
 }
 
-.containerMarker{
+.containerMarker {
     background-color: #f2f2f2;
     border-radius: 15px 0 0 15px;
     width: 50px;
     flex-shrink: 0;
 }
 
-.containerMarker i{
+.containerMarker i {
     margin: auto;
     font-size: 1.2rem;
 }
 
-.searchInput{
+.searchInput {
     border: 1px solid #f2f2f2;
     padding: 0 0 0 15px;
     font-size: 1.1rem;
@@ -106,11 +105,11 @@ nav li a:hover{
     width: 230px;
 }
 
-.searchInput::placeholder{
+.searchInput::placeholder {
     color: #c2c2c2;
 }
 
-.searchButton{
+.searchButton {
     width: 130px;
     background-color: #0065FC;
     border: none;
@@ -123,24 +122,24 @@ nav li a:hover{
     flex-shrink: 0;
 }
 
-.searchButton i{
+.searchButton i {
     display: none;
 }
 
 /* Filters */
 
-.textFilter{
+.textFilter {
     align-self: center;
 }
 
-.filters{
+.filters {
     flex-wrap: wrap;
     font-weight: 700;
     font-size: 1.1rem;
     margin-bottom: 30px;
 }
 
-.filter{
+.filter {
     align-items: center;
     height: 46px;
     border: 2px solid #f2f2f2;
@@ -150,21 +149,21 @@ nav li a:hover{
     border-radius: 25px;
 }
 
-.filter span{
+.filter span {
     padding-left: 12px;
 }
 
-.filter:hover{
+.filter:hover {
     cursor: pointer;
     border-color: #032a64;
-    color: #0068FC;
+    color: #0065FC;
 }
 
-.filterList{
+.filterList {
     flex-wrap: wrap;
 }
 
-.iconFilter{
+.iconFilter {
     position: relative;
     right: 1px;
     width: 50px;
@@ -173,12 +172,12 @@ nav li a:hover{
     background-color: #DEEBFF;
 }
 
-.iconFilter i{
+.iconFilter i {
     margin: auto;
     color: #0065FC;
 }
 
-.iconInfo{
+.iconInfo {
     height: 20px;
     width: 20px;
     border: 1px solid #f2f2f2;
@@ -186,107 +185,116 @@ nav li a:hover{
     margin-right: 10px;
 }
 
-.iconInfo i{
+.iconInfo i {
     margin: auto;
     font-size: .9rem;
-    color: #0065FC;  
+    color: #0065FC;
 }
 
+.containerInfo{
+    font-size: 0.9rem;
+}
 /* Hotels */
 
-.hotels, .popular{
+.hotels, .popular {
     background-color: #f2f2f2;
     border-radius: 20px;
-    padding: 40px;
+    padding: 20px;
 }
 
-.hotels{
-    flex: 2;
+.hotels {
+    width: 67%;
 }
 
-.hotels > h2{
-    margin: 0;
+.hotels>h2 {
+    margin-bottom: 20px;
+    margin-top: 10px;
 }
 
-.hotelsTab{
+.hotelsTab {
     display: grid;
     grid-template: repeat(2, 1fr) / repeat(3, 1fr);
-    gap: 30px;
-    margin: 30px 0 50px;
+    gap: 15px;
+    padding-bottom: 40px;
 }
 
-.hotelFrame{
+.hotelFrame {
     display: grid;
-    height: 220px;
+    height: 200px;
     grid-template-rows: 1fr 40%;
     box-sizing: border-box;
     border: 5px solid #fff;
     border-radius: 15px;
     overflow: hidden;
-    box-shadow: 0 0 7px #c1c1c1;
+    box-shadow: 0 0 7px #a8a8a8;
 }
 
-.hotelFrame img{
+.hotelFrame img {
     width: 100%;
-    height: 126px;
+    height: 115px;
     object-fit: cover;
 }
 
-.hotelDescription{
+.hotelDescription {
     flex-direction: column;
     justify-content: space-around;
     background-color: #fff;
     padding: 5px 10px;
 }
 
-.hotelDescription p{
+.hotelDescription p {
     margin: 0;
+    font-size: 0.8rem;
 }
 
-.hotelRate{
+.hotelRate {
     word-spacing: -1ch;
 }
 
-.fa-star{
-    font-size: .8rem;
+.fa-star {
+    font-size: .6rem;
     letter-spacing: 2px;
+    font-weight: 900;
 }
 
-.blueStar{
+
+.blueStar {
     color: #0065FC;
 }
 
-.greyStar{
+.greyStar {
     color: #f2f2f2;
 }
 
-.showMore{
-    font-weight: 700;
-    font-size: 1.2rem;
+.showMore {
+    font-weight: 800;
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+    margin-left: 15px;
 }
 
 /* Popular */
 
-.popular{
-    flex: 1;
-    margin-left: 3%;
+.popular {
+    width: 33%;
+    margin-left: 2%;
 }
 
-.popularIcon{
+.popularIcon {
     justify-content: space-between;
     align-items: baseline;
 }
 
-.popularIcon h2{
-    margin-top: 0;
+.popularIcon h2 {
+    margin-top: 10px;
     margin-bottom: 25px;
 }
 
-.popularIcon i{
+.popularIcon i {
     font-size: 1.5rem;
 }
 
-.popularFrame{
+.popularFrame {
     height: 145px;
     border: 5px solid #fff;
     border-radius: 15px;
@@ -296,13 +304,13 @@ nav li a:hover{
     overflow: hidden;
 }
 
-.popularFrame img{
+.popularFrame img {
     width: 40%;
     height: 100%;
     object-fit: cover;
 }
 
-.popularDescription{
+.popularDescription {
     flex: 1;
     background-color: #fff;
     flex-direction: column;
@@ -310,20 +318,20 @@ nav li a:hover{
     padding: 10px;
 }
 
-.hotelName{
+.hotelName {
     margin: 0;
     font-weight: 700;
-    font-size: 1.1rem;
+    font-size: 1rem;
 }
 
-.popularDescription .hotelName + p{
+.popularDescription .hotelName+p {
     margin-top: 8px;
     margin-bottom: 0;
 }
 
 /* Activities */
 
-.activitiesTab{
+.activitiesTab {
     display: grid;
     grid-template: repeat(12, 1fr) / repeat(4, 1fr);
     gap: 37.5px;
@@ -331,19 +339,19 @@ nav li a:hover{
     grid-auto-flow: column;
 }
 
-.row12{
+.row12 {
     grid-row-end: span 13;
 }
 
-.row6{
+.row6 {
     grid-row-end: span 7;
 }
 
-.row5{
+.row5 {
     grid-row-end: span 6;
 }
 
-.activityFrame{
+.activityFrame {
     display: grid;
     grid-template-rows: 1fr 50px;
     height: 100%;
@@ -353,13 +361,13 @@ nav li a:hover{
     box-shadow: 0 0 7px #c1c1c1;
 }
 
-.activityFrame img{
+.activityFrame img {
     width: 100%;
     object-fit: cover;
     height: 100%;
 }
 
-.activityDescription{
+.activityDescription {
     align-self: center;
     background-color: #fff;
     padding-left: 10px;
@@ -369,294 +377,220 @@ nav li a:hover{
 
 /* Footer */
 
-footer{
+footer {
     padding: 40px 50px 50px;
     background-color: #f2f2f2;
 }
 
-footer div{
+footer div {
     flex: 1;
 }
 
-footer li{
+footer li {
     margin-bottom: 15px;
 }
 
-footer a:hover{
+footer a:hover {
     font-weight: 600;
     color: #032a64;
 }
 
-@media only screen and (max-width: 1400px){
-
-    .hotels{
-        flex: 1.5;
-    }
-    
-    .hotelsTab{
-        grid-template: repeat(3, 1fr) / repeat(2, 1fr);
-        margin: 30px 0;
-    }
-
-    .activityDescription{
-        font-size: 1rem;
-    }
-}
 
 /* Tablet version */
 
-@media only screen and (max-width: 1024px){
-
+@media only screen and (max-width: 1023px) {
     /* Search - Tablet */
-
-    .filters{
+    .filters {
         flex-direction: column;
     }
-
-    .textFilter{
+    .textFilter {
         align-self: auto;
         margin-bottom: 15px;
     }
-
-    .filter{
+    .filter {
         margin: 0 1rem 1rem 0;
     }
-
     /* Popular - Tablet */
-
-    .popular{
+    .popular {
         margin: 0 0 20px;
+        width:auto;
     }
-
-    .popularFrame{
+    .popularFrame {
         height: 180px;
     }
-
-    .popularDescription .hotelName{
-        font-size: 1.4rem;
-    }
-
-    .popularDescription p{
+    .popularDescription .hotelName {
         font-size: 1.2rem;
     }
-
-    .popularDescription .fa-star{
+    .popularDescription p {
+        font-size: 1.1rem;
+    }
+    .popularDescription .fa-star {
         font-size: 1rem;
     }
-
     /* Hotels - Tablet */
     
-    .hotels{
+    .hotels {
         order: 2;
+        width: auto;
     }
-
-    .containerHotels{
+    .containerHotels {
         flex-direction: column;
     }
-
     /* Activities - Tablet */
-    
-    .activitiesTab{
+    .activitiesTab {
         height: auto;
     }
-
-    .activityFrame
-    {
+    .activityFrame {
         height: 190px;
     }
-
-    .row12, .row5, .row6{
+    .row12, .row5, .row6 {
         grid-row-end: span 4;
         grid-column-end: span 2;
     }
-
-    .activityDescription{
+    .activityDescription {
         font-size: 1.1rem;
     }
-
     /* Footer - Tablet */
-
-    footer div{
+    footer div {
         padding: 10px;
     }
 }
 
 /* Mobile version */
 
-@media only screen and (max-width: 595px){
-
+@media only screen and (max-width: 765px) {
     /* General */
-
-    #main{
+    #main {
         margin: 0;
     }
-
-    h2{
+    h2 {
         font-size: 1.4rem;
     }
-
     /* Header - Mobile */
-
-    header{
+    header {
         margin: 0;
         flex-direction: column;
     }
-
-    .logo{
+    .logo {
         margin-left: 20px;
     }
-
-    .signUp{
+    .signUp {
         align-self: flex-end;
         padding: 0;
         margin-right: 20px;
         position: relative;
         bottom: 30px;
     }
-
-    nav{
-        order:3;
+    nav {
+        order: 3;
     }
-    
-    nav ul{
+    nav ul {
         width: 100%;
     }
-
-    nav li{
+    nav li {
         width: 50%;
         text-align: center;
         padding: 20px 0;
         border-bottom: 3px solid #f2f2f2;
     }
-
-    nav li a{
+    nav li a {
         padding: inherit;
     }
-
-    nav li a:hover{
+    nav li a:hover {
         border-top: none;
     }
-
-    nav li:hover{
-        border-bottom-color:#0065FC;
+    nav li:hover {
+        border-bottom-color: #0065FC;
     }
-
     /* Search - Mobile */
-
-    .search{
+    .search {
         margin: 30px 20px;
     }
-
-    .searchInput{
+    .searchInput {
         flex: 1;
     }
-
-    .searchBar{
+    .searchBar {
         margin: 35px 0 30px;
     }
-
-    .searchButton{
+    .searchButton {
         position: relative;
         width: 50px;
         border-radius: 15px;
         left: -20px;
     }
-
-    .searchButton span{
+    .searchButton span {
         display: none;
     }
-
-    .searchButton i{
+    .searchButton i {
         display: inline-block;
     }
-
-    .filters{
+    .filters {
         margin-bottom: 12px;
     }
-
     /* Popular - Mobile */
-
-    .popular{
+    .popular {
         border-radius: 0;
         padding: 40px 20px 30px;
         margin-bottom: 40px;
     }
-
-    .popularFrame{
+    .popularFrame {
         height: 145px;
         margin-bottom: 10px;
     }
-
-    .popularIcon i{
+    .popularIcon i {
         font-size: 1.4rem;
     }
-
-    .hotelName{
+    .hotelName {
         font-size: 1rem !important;
     }
-
-    .popularDescription p{
+    .popularDescription p {
         font-size: .9rem;
     }
-
-    .popularDescription{
+    .popularDescription {
         padding: 15px 10px 10px 20px;
     }
-
-    .fa-star{
+    .fa-star {
         font-size: .8rem !important;
         letter-spacing: 1px;
     }
-
     /* Hotels - Mobile */
-
-    .hotelFrame{
+    .hotelFrame {
         height: 200px;
     }
-
-    .hotels{
+    .hotels {
         padding: 0 20px;
         background-color: initial;
     }
-
-    .hotelsTab{
+    .hotelsTab {
         grid-template: repeat(6, 1fr) / 1fr;
         gap: 15px;
     }
-
-    .hotelFrame img{
+    .hotelFrame img {
         height: 116px;
     }
-
-    .hotelDescription p{
+    .hotelDescription p {
         font-size: .9rem;
     }
-
     /* Activities - Mobile */
-
-    .activities{
+    .activities {
         margin: 55px 20px 45px;
     }
-
-    .activitiesTab{
-        grid-template: repeat(6, 1fr) / 1fr;;
+    .activitiesTab {
+        grid-template: repeat(6, 1fr) / 1fr;
+        ;
         grid-auto-flow: initial;
         gap: 24px;
     }
-
-    .row12, .row5, .row6{
+    .row12, .row5, .row6 {
         grid-row-end: span 1;
         grid-column-end: span 1;
     }
-
     /* Footer - Mobile */
-
-    footer{
+    footer {
         flex-direction: column;
         padding: 45px 30px;
     }
-
-    footer div{
+    footer div {
         padding: 0;
     }
 }
